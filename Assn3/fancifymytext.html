@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<meta charset="UTF-8">
+	<title>Fancify My Text</title>
+	<head>
+		<title>Fancify Shamcify</title>
+
+		<!-- link to your script file here -->
+		
+	</head>
+
+	<body>
+		<!--h1>Fancify Your Text</h1> might re add back in-->
+		<div>
+			<fieldset>
+				<legend>Text</legend>
+				<textarea id ='textArea' rows="4" cols="30"></textarea>
+			</fieldset>
+			<fieldset>
+				<legend>Fancify</legend>
+				<div class="buttonGrid">
+					<button onclick="bigger()">Biggify</button>
+					
+					<button onclock="moo()">Moo</button>
+				</div>
+				<form>
+					<input id="FancyShmancy" onchange="handlerOnChange(this)" type="radio" value="FancyShmancy" name="textChanging">
+
+					<label for="FancyShmancy">Fancy Schmancy</label>
+					<br>
+					<input id="BoringBetty" onchange="handlerOnChange(this)" type="radio" value="BoringBetty" name="textChanging">
+
+					<label for="BoringBetty">BoringBetty</label>
+				</form>
+			</fieldset>
+		</div>
+		<!-- Your UI controls go here -->
+		<scrupt src="/controllers/fancifymytext.js"></scrupt>
+	</body>
+</html>
